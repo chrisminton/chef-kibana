@@ -26,8 +26,8 @@ template File.join(node['nginx']['dir'], 'sites-available', 'kibana') do
     'auth_file'           => node['kibana']['auth_file'],
     'index'               => node['kibana']['index'],
     'kibana_service'      => node['kibana']['kibana_service'],
-    'elasticserach_hosts' => node['kibana']['elasticsearch']['hosts'],
-    'elasticserach_port'  => node['kibana']['elasticsearch']['port']
+    'elasticsearch_hosts' => node['kibana']['elasticsearch']['hosts'],
+    'elasticsearch_port'  => node['kibana']['elasticsearch']['port']
   )
 end
 
